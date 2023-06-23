@@ -8,6 +8,7 @@ const ListView = () => {
   const [users, setUsers] = useState([]);
   const [searchText, setSearchText] = useState("");
   const [searchedUsers, setSearchedUsers] = useState(users);
+  let searchQuery;
 
   useEffect(() => {
     axios
@@ -30,19 +31,17 @@ const ListView = () => {
       });
   }, []);
 
-  useEffect(() => {
-    searchResults();
-  }, [searchText]);
+  const searchResults = (queryValue) => {
+    const filteredUsers = users.filter((value) =>
+      value.firstName.toLowerCase().includes(queryValue.toLowerCase())
+    );
+    setSearchedUsers(filteredUsers);
+  };
 
   const updateSearch = (e) => {
     setSearchText(e.target.value);
-  };
-
-  const searchResults = () => {
-    const filteredUsers = users.filter((value) =>
-      value.firstName.toLowerCase().includes(searchText.toLowerCase())
-    );
-    setSearchedUsers(filteredUsers);
+    searchQuery = e.target.value;
+    searchResults(searchQuery);
   };
 
   const userList = searchText.length ? searchedUsers : users;

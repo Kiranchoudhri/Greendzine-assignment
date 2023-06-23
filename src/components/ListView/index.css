@@ -1,32 +1,32 @@
 .listViewContainer {
   min-height: 100vh;
-  padding: 20px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #223a5f;
 }
+
 .title {
   font-size: 24px;
-  padding-bottom: 16px;
-  color: #cbd2d9;
-}
-.userContainer {
-  width: 70vw;
-  list-style-type: none;
-  padding-left: 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-bottom: 30px;
+  color: #3388eb;
 }
 
 .searchField {
   padding: 6px 10px 6px 12px;
   font-size: 16px;
   width: 70vw;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   border-radius: 6px;
-  border-width: 0px;
+  border: 1px solid #9f9f9f;
+}
+
+.userContainer {
+  width: 70%;
+  list-style-type: none;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .emptySearch {
