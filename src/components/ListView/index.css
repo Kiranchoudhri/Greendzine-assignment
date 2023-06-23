@@ -1,4 +1,5 @@
 .listViewContainer {
+  min-height: 100vh;
   padding: 20px 40px;
   display: flex;
   flex-direction: column;
@@ -12,7 +13,6 @@
 }
 .userContainer {
   width: 70vw;
-  margin: auto;
   list-style-type: none;
   padding-left: 0px;
   display: flex;
@@ -21,7 +21,7 @@
 }
 
 .searchField {
-  padding: 6px 0px 6px 12px;
+  padding: 6px 10px 6px 12px;
   font-size: 16px;
   width: 70vw;
   margin-bottom: 40px;
@@ -33,13 +33,13 @@
   text-align: center;
   padding-top: 80px;
   font-weight: 600;
-  height: 100vh;
 }
 
 @media (min-width: 765px) {
   .userContainer {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
     justify-content: space-around;
   }
   .title {
@@ -47,5 +47,9 @@
   }
   .searchField {
     font-size: 30px;
+    width: 60vw;
+  }
+  .emptySearch {
+    font-size: 36px;
   }
 }
