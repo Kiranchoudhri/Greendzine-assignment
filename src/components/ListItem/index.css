@@ -1,0 +1,42 @@
+.userCard {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.userImageWrapper {
+  padding: 12px;
+  border: 2px solid #94a3b8;
+  border-radius: 16px;
+  position: relative;
+}
+
+.userImage {
+  width: 200px;
+  height: 150px;
+  border-radius: 20px;
+}
+
+.userId {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #606060;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 208px;
+  top: -30px;
+}
+
+.userName {
+  padding-top: 10px;
+  font-size: 20px;
+  color: #94a3b8;
+}
+
+@media (min-width: 765px) {
+  .userName {
+    font-size: 30px;
+  }
+}

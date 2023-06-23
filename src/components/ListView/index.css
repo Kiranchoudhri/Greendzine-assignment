@@ -1,0 +1,51 @@
+.listViewContainer {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #223a5f;
+}
+.title {
+  font-size: 24px;
+  padding-bottom: 16px;
+  color: #cbd2d9;
+}
+.userContainer {
+  width: 70vw;
+  margin: auto;
+  list-style-type: none;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.searchField {
+  padding: 6px 0px 6px 12px;
+  font-size: 16px;
+  width: 70vw;
+  margin-bottom: 40px;
+  border-radius: 6px;
+  border-width: 0px;
+}
+
+.emptySearch {
+  text-align: center;
+  padding-top: 80px;
+  font-weight: 600;
+  height: 100vh;
+}
+
+@media (min-width: 765px) {
+  .userContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .title {
+    font-size: 36px;
+  }
+  .searchField {
+    font-size: 30px;
+  }
+}
